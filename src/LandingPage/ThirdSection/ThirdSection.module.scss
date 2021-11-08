@@ -1,0 +1,32 @@
+@import '../../../index.scss';
+.main_cont_div{
+.main_cont{
+    width: 80%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #2E436D;
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    margin: 0 auto;
+    padding: 5rem 5rem;
+    
+    @include media("mobileonly") {
+      width: 100%;
+      height: auto;
+      padding: 1rem 0rem;
+    
+      }
+      @include media("tablet") {
+        width: 100%;
+    height: auto;
+      }
+      .right_side{
+        img{
+          width: 100%;
+        }
+      }
+}
+
+}

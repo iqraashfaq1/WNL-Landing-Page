@@ -1,0 +1,50 @@
+@import '../../../index.scss';
+
+
+.main_cont_div{
+    padding-top: 50px;
+.main_cont{
+    padding-top: 20px;
+  
+    .left_col{
+        p{
+            font-size: 18px;
+            color:  #DF7C6C;
+            font-weight: 600;
+            margin-left: 5rem;
+
+            @include media("mobileonly") {
+               text-align: center;
+               margin-left: 0rem;
+            }
+            @include media("tablet") {
+                text-align: center;
+                margin-left: 0rem;
+            }
+        }
+    }
+
+
+    .right_col{
+        .right_side{
+            display: flex;
+            justify-content: space-around;
+            font-weight: 600;
+            margin-left: 20px;
+
+            @include media("mobileonly") {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-left: 0px;
+            }
+            @include media("tablet") {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-left: 0px;
+            }
+        }
+    }
+}
+}

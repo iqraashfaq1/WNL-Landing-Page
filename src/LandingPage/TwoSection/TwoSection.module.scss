@@ -1,0 +1,38 @@
+@import '../../../index.scss';
+
+.main_container_div{
+    overflow: hidden;
+.main_container{
+    
+    .main_cont_area{
+        .li_cont{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: 600;
+            font-size: larger;
+             
+    @include media("mobileonly") {
+        display: none;
+    }
+    @include media("tablet") {
+        display: none;
+    }
+            
+            ul{
+                display: flex;
+                // justify-content: space-between;
+                list-style: none;
+                border-bottom: 1px solid black;
+
+                li{
+                    // justify-content: space-between;
+                    padding: 0 140px;
+                    padding-top: 60px;
+                }
+            }
+        }
+    }
+}
+}
